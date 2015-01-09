@@ -1,0 +1,13 @@
+<div class="containerMegafolio">
+  <div ng-controller="MainCtrl">
+    <div ng-repeat="new in news" class="megafolio-container"><img id="entry-{{new.entry}}" ng-src="{{new.image}}" data-width="504" data-height="400" class="mega-entry"/>
+      <div class="mega-covercaption mega-square-bottom mega-landscape-bottom mega-portrait-bottom mega-pink mega-transparent">
+        <div class="mega-title">{{new.title}}</div>
+      </div>
+      <div class="mega-hover notitle alone">
+        <div class="mega-hovertitle">Cliquez ici</div><a href="{{new.link}}">
+          <div class="mega-hoverlink"></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
